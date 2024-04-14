@@ -151,13 +151,18 @@ button{
 
         <label for="password2">Confrom Password</label>
         <input type="password" placeholder="Confrom Password" id="password2" name="password2">
-
-        <a href="https://has-tar.github.io/Login/login">
-        <button type="submit">Signup</button>
-        </a>
+        
+        <button id="login-button">Signup</button>
         
         <a href="https://has-tar.github.io/Login/login" >i have already account</a>
     </form>
+
+        <script>
+        document.getElementById("login-button").addEventListener("click", function(event) {
+			event.preventDefault();
+            window.location.href = "https://has-tar.github.io/Login/login";
+        });
+    	</script>
         
 </body>
 </html>
